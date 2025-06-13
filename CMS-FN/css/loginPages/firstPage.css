@@ -1,0 +1,48 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../../assets/images/bgLogIn.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    color: white;
+}
+
+#textContainer{
+    width: 600px;
+    height: fit-content;
+
+    background-color: #293941;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm{
+    width: 500px;
+    background-color: #001e34;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media all and (max-width: 550px) {
+    #textContainer{
+        width: 350px;
+    }
+
+    #loginForm{
+        width: 300px;
+        padding: 20px !important;
+    }
+}
+
+#btnAdminSignIn{
+    width: 100%;
+}
