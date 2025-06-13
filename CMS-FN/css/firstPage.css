@@ -8,12 +8,14 @@ body{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
-#loginForm{
-    width: 500px;
-    background-color: #cecece;
+#textContainer{
+    width: fit-content;
+    height: fit-content;
+
+    background-color: #dcdcdc;
     border-radius: 10px;
 }
