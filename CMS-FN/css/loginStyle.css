@@ -1,0 +1,19 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../assets/images/bgLogIn.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginForm{
+    width: 500px;
+    background-color: #cecece;
+    border-radius: 10px;
+}
