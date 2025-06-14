@@ -4,6 +4,10 @@ export class Validation {
         return /^[A-Za-z. ]+$/.test(name);
     }
 
+    static isPasswordValid(password) {
+        return /^[A-Za-z]{4,}$/.test(password);
+    }
+
     static isEmailValid(email) {
         return /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/.test(email);
     }
@@ -22,10 +26,5 @@ export class Validation {
 
     static isDoubleValid(value) {
         return /^-?\d+(\.\d+)?$/.test(value);
-    }
-
-    // ✅ New: Password Validation Method
-    static isPasswordValid(password) {
-        return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(password);
     }
 }
