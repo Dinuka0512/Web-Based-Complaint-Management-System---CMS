@@ -69,3 +69,65 @@ body{
         width: 100%;
     }
 }
+
+#resentResolvedComplains{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    gap: 1px;
+}
+
+.resolveCard{
+    background-color: #495057;
+    color: white;
+}
+
+.resolveCard:hover{
+    background-image: url("../../assets/images/bgLogIn.jpg");
+}
+
+#reseolvedContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media all and (max-width: 900px) {
+    #resentResolvedComplains{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 510px) {
+    #resentResolvedComplains{
+        grid-template-columns: 1fr;
+    }
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.user-info .name {
+    font-weight: bold;
+}
+
+.user-info .email {
+    font-size: 0.9rem;
+    color: #ccc;
+}
