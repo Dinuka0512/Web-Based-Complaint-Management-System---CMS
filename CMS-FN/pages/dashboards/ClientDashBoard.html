@@ -45,13 +45,51 @@
             </ul>
         </div>
     </div>
+
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Complaint</a>
+        <a href="#">Add Complaints</a>
+        <a href="" class="danger">LogOut</a>
+    </div>
 </nav>
 
 <!-- Add padding top to avoid overlap with fixed navbar -->
 <div style="padding-top: 70px;"></div>
 
 
+<!-- Main Dashboard Content -->
+<div class="main-content p-4 mt-5">
+    <h2>Dashboard Overview</h2>
+    <p>Welcome to the CMS dashboard. Here you can track all complaint data.</p>
 
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Complaints</h5>
+                    <p class="card-text fs-2">120</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Resolved</h5>
+                    <p class="card-text fs-2">85</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Pending</h5>
+                    <p class="card-text fs-2">35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
